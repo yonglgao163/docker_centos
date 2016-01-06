@@ -1,0 +1,5 @@
+FROM base/centos:latest
+
+ADD ROOT.war /home/admin/webapps/ROOT.war
+
+CMD ["/usr/bin/supervisord" , "-c" , "/etc/supervisor/supervisord.conf"]
